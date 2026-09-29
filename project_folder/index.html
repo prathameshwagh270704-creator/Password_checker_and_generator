@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Security Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>PASSWORD SECURITY CHECKER</h1>
+
+        <div class="input-section">
+
+            <label for="password">Enter your password:</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                >
+
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+            </div>
+
+            <button id="checkButton">
+                Check Password
+            </button>
+
+        </div>
+
+
+        <!-- PASSWORD STRENGTH -->
+
+        <div class="result-section">
+
+            <h2>PASSWORD STRENGTH</h2>
+
+            <p>
+                Strength:
+                <span id="strength">-</span>
+            </p>
+
+            <div id="suggestions"></div>
+
+        </div>
+
+
+        <!-- GENERATED PASSWORD -->
+
+        <div class="result-section">
+
+            <h2>GENERATED PASSWORD</h2>
+
+            <p>
+                Original password: [HIDDEN]
+            </p>
+
+            <p>
+                Generated password:
+                <span id="generatedPassword">-</span>
+            </p>
+
+            <p>
+                Original length:
+                <span id="originalLength">-</span>
+            </p>
+
+            <p>
+                Generated length:
+                <span id="generatedLength">-</span>
+            </p>
+
+            <p>
+                Length check:
+                <span id="lengthCheck">-</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
